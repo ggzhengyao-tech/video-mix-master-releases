@@ -1,0 +1,31 @@
+{
+  "version": "2.0.1",
+  "notes": "# 视频混剪大师 v2.0.1\n\n这是双平台稳定版的自动更新引导版本。\n\n## 本次更新\n\n- 合入已经通过 Windows 和 macOS 验证的双平台稳定性修复。\n- 增加 Tauri 官方自动更新模块。\n- 软件启动后延迟检查更新，每天最多自动检查一次。\n- 软件设置中增加手动检查更新和 Stable/Beta 通道选择。\n- 更新提示显示当前版本、最新版本、更新说明和发布时间。\n- 增加更新包下载进度、独立签名验证、安装和重新启动。\n- 增加 Intel Mac、Apple Silicon 和 Windows x64 自动发布工作流。\n- 保持现有授权算法、许可证格式、机器码算法和用户数据兼容。\n\n## 首次启用自动更新\n\n已有 `2.0.0` 不包含 updater，需要人工下载安装一次 `2.0.1`。从\n`2.0.1` 开始，后续版本可以在软件内完成提醒、下载、验证、安装和重启。\n\n## 签名说明\n\n更新包使用独立的 Tauri updater 密钥签名，与软件许可证签名密钥完全分开。\n当前版本暂未配置 Apple Developer ID、公证或 Windows Authenticode，因此\n操作系统仍可能显示来源或 SmartScreen 提示。\n\n",
+  "pub_date": "2026-07-23T05:44:06Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXZWcVZ4eEdiOTNJZ29ZNjJybkdzSDlQMGJhdkh4Y0l5bG9yUzBZcWRYZGE1UEc4cGgwUHYvUGRKWW9XeUR4cmxjUmZyMjI0Uk1leGpZaVYxMmFoZndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5MjQyCWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CnpOYk1oaVcwRUlEa1hlZm9zSHVtYUtwVm02Ky9BcTh2NFpSNUlKRGgrbTU1OEhwR0EzNzZpMExsUGtQOS9yYTNJdUk5V1VRQlNiWmtVWmZEV1JvOEJ3PT0K"
+    },
+    "darwin-x86_64-app": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXZWcVZ4eEdiOTNJZ29ZNjJybkdzSDlQMGJhdkh4Y0l5bG9yUzBZcWRYZGE1UEc4cGgwUHYvUGRKWW9XeUR4cmxjUmZyMjI0Uk1leGpZaVYxMmFoZndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5MjQyCWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CnpOYk1oaVcwRUlEa1hlZm9zSHVtYUtwVm02Ky9BcTh2NFpSNUlKRGgrbTU1OEhwR0EzNzZpMExsUGtQOS9yYTNJdUk5V1VRQlNiWmtVWmZEV1JvOEJ3PT0K"
+    },
+    "darwin-aarch64": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVkVDhSbE5tUXZJOXJkc0Q1Y0M5Ylh4d1JsbjY3QUZHTjM4WjNwMk02MUFWR2tzY2Nxb3E3MTVUd3FIVjNnMmFBNHN2VEhRblh6dFBHekM5VW9EOXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5NzI2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CkRnaS9qUWZWWjN2Uzh4a2RwZHE4OUhuNlBReWlhM1FtSThubzAzd2doSXhGdE1SR3JyVTdqNWRSWlAwMnE3ZlYxWDIzVFRMaUJEU2E1TTZCS2pad0N3PT0K"
+    },
+    "darwin-aarch64-app": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVkVDhSbE5tUXZJOXJkc0Q1Y0M5Ylh4d1JsbjY3QUZHTjM4WjNwMk02MUFWR2tzY2Nxb3E3MTVUd3FIVjNnMmFBNHN2VEhRblh6dFBHekM5VW9EOXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5NzI2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CkRnaS9qUWZWWjN2Uzh4a2RwZHE4OUhuNlBReWlhM1FtSThubzAzd2doSXhGdE1SR3JyVTdqNWRSWlAwMnE3ZlYxWDIzVFRMaUJEU2E1TTZCS2pad0N3PT0K"
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_2.0.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWlCMU9yTmJhdlhTNWl2bG9LZzFXcE1RNkh3Z04zYlRJcE5BWkdDOEEvSzlDZThQL00vdy9HNjhOaG02M0xVSlc4K0MxTXlzU3dFc3pkaWdVdXJhRmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzkxMjY2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMF8yLjAuMV94NjQtc2V0dXAuZXhlCmMxQUJ2VFo5WndLbGdCVEZKVWs1WXRhdzZsK0xJcmRRL01sbVNCblRjTjRuT245Q2NrNnIxaFQ5V09JUTh3aWdtL3gzdUdXdmpqbm5pbmp4U2lPckRnPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_2.0.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWlCMU9yTmJhdlhTNWl2bG9LZzFXcE1RNkh3Z04zYlRJcE5BWkdDOEEvSzlDZThQL00vdy9HNjhOaG02M0xVSlc4K0MxTXlzU3dFc3pkaWdVdXJhRmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzkxMjY2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMF8yLjAuMV94NjQtc2V0dXAuZXhlCmMxQUJ2VFo5WndLbGdCVEZKVWs1WXRhdzZsK0xJcmRRL01sbVNCblRjTjRuT245Q2NrNnIxaFQ5V09JUTh3aWdtL3gzdUdXdmpqbm5pbmp4U2lPckRnPT0K"
+    }
+  }
+}
