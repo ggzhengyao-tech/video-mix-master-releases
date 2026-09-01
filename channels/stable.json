@@ -1,31 +1,31 @@
 {
-  "version": "2.0.1",
-  "notes": "# 视频混剪大师 v2.0.1\n\n这是双平台稳定版的自动更新引导版本。\n\n## 本次更新\n\n- 合入已经通过 Windows 和 macOS 验证的双平台稳定性修复。\n- 增加 Tauri 官方自动更新模块。\n- 软件启动后延迟检查更新，每天最多自动检查一次。\n- 软件设置中增加手动检查更新和 Stable/Beta 通道选择。\n- 更新提示显示当前版本、最新版本、更新说明和发布时间。\n- 增加更新包下载进度、独立签名验证、安装和重新启动。\n- 增加 Intel Mac、Apple Silicon 和 Windows x64 自动发布工作流。\n- 保持现有授权算法、许可证格式、机器码算法和用户数据兼容。\n\n## 首次启用自动更新\n\n已有 `2.0.0` 不包含 updater，需要人工下载安装一次 `2.0.1`。从\n`2.0.1` 开始，后续版本可以在软件内完成提醒、下载、验证、安装和重启。\n\n## 签名说明\n\n更新包使用独立的 Tauri updater 密钥签名，与软件许可证签名密钥完全分开。\n当前版本暂未配置 Apple Developer ID、公证或 Windows Authenticode，因此\n操作系统仍可能显示来源或 SmartScreen 提示。\n\n",
-  "pub_date": "2026-07-23T05:44:06Z",
+  "version": "2.6.0",
+  "notes": "# 视频混剪大师 2.6.0\n\n## 新增功能\n\n- 图片动态效果新增“模拟手持”，以低幅度、慢速且连续的运镜模拟平缓手持拍摄。\n- 更新图片与视频之间的转场效果，并支持在非直接跳切转场处自动匹配、精确对齐转场音效。\n- 项目管理新增“另存为”、项目文件拖拽打开，以及加载项目后自动使用项目文件名和重新识别素材目录。\n- 段落列表支持拖拽调整顺序。\n- 素材批量处理新增音频波形、预览清晰度、画框比例、画面位置与等比缩放、画面调整和速度参数。\n- 素材批量处理预览支持可视化变换边框、画布背景色修改，以及拖动播放头时实时更新预览画面。\n\n## 优化与修复\n\n- 移除多图混剪模式及其关联功能，保留顺序混剪、超级混剪和素材批量处理工作流。\n- 修复未选择抖动效果时成片仍出现抖动的问题，并进一步优化逐渐放大、逐渐缩小等图片运镜的平滑度。\n- 移除溶解等旧式转场，调整为更细腻、平滑且具有物理运动感的过渡；直接跳切保持无音效。\n- 优化段落时长与节奏选项布局，统一随机裁剪画面和水平翻转控件尺寸及对齐。\n- 修复拖拽打开项目后已保存目录需要再次点击才生效的问题。\n- 优化素材批量处理时间线布局：首次进入即可显示视频轨，空间随窗口变化显示更多轨道，并在内容超宽时提供横向滚动。\n- 优化播放头拖动性能和时间位置保持逻辑，切换视频轨时不再自动跳回轨道起点。\n- 优化右侧功能区的字号、滑块对齐、卡片布局和可用空间，并将预览清晰度与适配方式移至预览区快捷按钮。\n- 增强视频画面选中边框的可见性，使竖向画面充分利用预览高度。\n\n## 兼容性与发布说明\n\n- 项目数据结构升级至 Schema 19，并保留旧项目的兼容加载与默认值迁移。\n- 版本号统一为 2.6.0；许可证格式、设备识别逻辑和更新通道规则保持不变。\n- 本版本已完成 macOS 正式构建验证，以及 Windows x64 的构建、安装和人工功能验证。\n- 当前候选版本仅生成 Draft Release；在另行确认正式发布前，不修改 stable 或 beta 更新通道。\n\n",
+  "pub_date": "2026-09-01T13:25:11Z",
   "platforms": {
     "darwin-x86_64": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXZWcVZ4eEdiOTNJZ29ZNjJybkdzSDlQMGJhdkh4Y0l5bG9yUzBZcWRYZGE1UEc4cGgwUHYvUGRKWW9XeUR4cmxjUmZyMjI0Uk1leGpZaVYxMmFoZndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5MjQyCWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CnpOYk1oaVcwRUlEa1hlZm9zSHVtYUtwVm02Ky9BcTh2NFpSNUlKRGgrbTU1OEhwR0EzNzZpMExsUGtQOS9yYTNJdUk5V1VRQlNiWmtVWmZEV1JvOEJ3PT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVaakZ5OXh1TVlnUGNhTzhZdndOOStxSHZsK1luNUUzMFVWMmczSFphMFQ5UmVOVmJRZ3pFalFDeGRGc0tiOEphaWZRSHFSbnFtSkFjNk1sVVM2N3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjY5ODM5CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wLmFwcC50YXIuZ3oKNGN4MkhCUlZxSG9VRHdhTk8wbjFYaDhia0JzZCs2eXlVSGY5S0tZeWtSZk1vNDY0WGJmUXJwUU5JV0w1eFBSU3RNYjhmT1pjVE9sQWNRZWlKL3lCQkE9PQo="
     },
     "darwin-x86_64-app": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXZWcVZ4eEdiOTNJZ29ZNjJybkdzSDlQMGJhdkh4Y0l5bG9yUzBZcWRYZGE1UEc4cGgwUHYvUGRKWW9XeUR4cmxjUmZyMjI0Uk1leGpZaVYxMmFoZndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5MjQyCWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CnpOYk1oaVcwRUlEa1hlZm9zSHVtYUtwVm02Ky9BcTh2NFpSNUlKRGgrbTU1OEhwR0EzNzZpMExsUGtQOS9yYTNJdUk5V1VRQlNiWmtVWmZEV1JvOEJ3PT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVaakZ5OXh1TVlnUGNhTzhZdndOOStxSHZsK1luNUUzMFVWMmczSFphMFQ5UmVOVmJRZ3pFalFDeGRGc0tiOEphaWZRSHFSbnFtSkFjNk1sVVM2N3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjY5ODM5CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wLmFwcC50YXIuZ3oKNGN4MkhCUlZxSG9VRHdhTk8wbjFYaDhia0JzZCs2eXlVSGY5S0tZeWtSZk1vNDY0WGJmUXJwUU5JV0w1eFBSU3RNYjhmT1pjVE9sQWNRZWlKL3lCQkE9PQo="
     },
     "darwin-aarch64": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVkVDhSbE5tUXZJOXJkc0Q1Y0M5Ylh4d1JsbjY3QUZHTjM4WjNwMk02MUFWR2tzY2Nxb3E3MTVUd3FIVjNnMmFBNHN2VEhRblh6dFBHekM5VW9EOXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5NzI2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CkRnaS9qUWZWWjN2Uzh4a2RwZHE4OUhuNlBReWlhM1FtSThubzAzd2doSXhGdE1SR3JyVTdqNWRSWlAwMnE3ZlYxWDIzVFRMaUJEU2E1TTZCS2pad0N3PT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWh5alBmSVBld3FiOWFUM2xzdVRYeVcwRWhpRExYdHcyR2Y1aXJwY0RaTTRqSm5zT0FzalBpWDBnN0dqQ29HQ3lqR1c0QzdxM29iUEllNXhhL0tES0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjcwNDc2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wLmFwcC50YXIuZ3oKOTE2VUJCc3ZxSzNCQkpDZW96VjF4bzhrRVRtck53TG9CMlk2RTR0ak5KVFFOZXBOWGpyaGNDYnZqLzl5VHgvODlRZkZkRFVpcVFkU3RXcEtPdzRkQUE9PQo="
     },
     "darwin-aarch64-app": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXVkVDhSbE5tUXZJOXJkc0Q1Y0M5Ylh4d1JsbjY3QUZHTjM4WjNwMk02MUFWR2tzY2Nxb3E3MTVUd3FIVjNnMmFBNHN2VEhRblh6dFBHekM5VW9EOXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0Nzg5NzI2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMC5hcHAudGFyLmd6CkRnaS9qUWZWWjN2Uzh4a2RwZHE4OUhuNlBReWlhM1FtSThubzAzd2doSXhGdE1SR3JyVTdqNWRSWlAwMnE3ZlYxWDIzVFRMaUJEU2E1TTZCS2pad0N3PT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWh5alBmSVBld3FiOWFUM2xzdVRYeVcwRWhpRExYdHcyR2Y1aXJwY0RaTTRqSm5zT0FzalBpWDBnN0dqQ29HQ3lqR1c0QzdxM29iUEllNXhhL0tES0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjcwNDc2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wLmFwcC50YXIuZ3oKOTE2VUJCc3ZxSzNCQkpDZW96VjF4bzhrRVRtck53TG9CMlk2RTR0ak5KVFFOZXBOWGpyaGNDYnZqLzl5VHgvODlRZkZkRFVpcVFkU3RXcEtPdzRkQUE9PQo="
     },
     "windows-x86_64": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_2.0.1_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWlCMU9yTmJhdlhTNWl2bG9LZzFXcE1RNkh3Z04zYlRJcE5BWkdDOEEvSzlDZThQL00vdy9HNjhOaG02M0xVSlc4K0MxTXlzU3dFc3pkaWdVdXJhRmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzkxMjY2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMF8yLjAuMV94NjQtc2V0dXAuZXhlCmMxQUJ2VFo5WndLbGdCVEZKVWs1WXRhdzZsK0xJcmRRL01sbVNCblRjTjRuT245Q2NrNnIxaFQ5V09JUTh3aWdtL3gzdUdXdmpqbm5pbmp4U2lPckRnPT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_2.6.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXE4alFEdkFpMTRta3JLbEFvcmhSTmc2VUVUemFUN0JibHJrcENUalhFdVRxM09ibFVsNTg0Y2Nhb2xsWG10S3Vqa2VUVE9XbHhTUmZ3U1lGYWNVbGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjcxODE0CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wXzIuNi4wX3g2NC1zZXR1cC5leGUKOTUvcE9Gc2RqMWJCNTlFdWNNVmxNREdqZTNkaGJUa1FacGVYMWt2YXBmQkltNzd0ZWdBSkkyZU9idDlKUm5nZ1FMZ2lkdEl0ZGFzWmZWSlpqeUxpRFE9PQo="
     },
     "windows-x86_64-nsis": {
-      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.0.1/2.0_2.0.1_x64-setup.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOWlCMU9yTmJhdlhTNWl2bG9LZzFXcE1RNkh3Z04zYlRJcE5BWkdDOEEvSzlDZThQL00vdy9HNjhOaG02M0xVSlc4K0MxTXlzU3dFc3pkaWdVdXJhRmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NzkxMjY2CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuMF8yLjAuMV94NjQtc2V0dXAuZXhlCmMxQUJ2VFo5WndLbGdCVEZKVWs1WXRhdzZsK0xJcmRRL01sbVNCblRjTjRuT245Q2NrNnIxaFQ5V09JUTh3aWdtL3gzdUdXdmpqbm5pbmp4U2lPckRnPT0K"
+      "url": "https://github.com/ggzhengyao-tech/video-mix-master-releases/releases/download/v2.6.0/2.6.0_2.6.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTbVRxdHNOTEwzOXE4alFEdkFpMTRta3JLbEFvcmhSTmc2VUVUemFUN0JibHJrcENUalhFdVRxM09ibFVsNTg0Y2Nhb2xsWG10S3Vqa2VUVE9XbHhTUmZ3U1lGYWNVbGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjcxODE0CWZpbGU66KeG6aKR5re35Ymq5aSn5biIIDIuNi4wXzIuNi4wX3g2NC1zZXR1cC5leGUKOTUvcE9Gc2RqMWJCNTlFdWNNVmxNREdqZTNkaGJUa1FacGVYMWt2YXBmQkltNzd0ZWdBSkkyZU9idDlKUm5nZ1FMZ2lkdEl0ZGFzWmZWSlpqeUxpRFE9PQo="
     }
   }
 }
